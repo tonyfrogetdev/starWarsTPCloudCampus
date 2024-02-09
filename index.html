@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>StarWarsTP</title>
+  </head>
+  <body class="bg-black h-screen text-white font-roboto">
+    <header class="flex w-full border-y">
+      <img src="./assets/SpaceX.png" alt="" class="" />
+      <ul class="flex justify-content items-center gap-12">
+        <li class="ml-16 text-3xl"><a href="./index.html">Accueil</a></li>
+        <li class="ml-16 text-3xl">Prochaine mission</li>
+      </ul>
+    </header>
+
+    <main class="flex">
+      <div
+        class="w-40 border-r h-screen flex flex-col pt-8 justify-start items-center gap-6"
+      >
+        <a href="./planete.html">
+          <img src="/assets/planètes.PNG" alt="" />
+        </a>
+
+        <img src="/assets/Vehicules.PNG" alt="" />
+        <img src="/assets/Personnes.PNG" alt="" />
+      </div>
+
+      <div class="flex-1 flex justify-around gap-28 flex-col mx-12">
+        <div
+          class="bg-cover bg-center bg-white w-full backdrop-filter backdrop-blur-md p-8 gap-6 mt-8"
+          style="background-image: url('/assets/andy.jpg')"
+        >
+          <div class="flex flex-col gap-6">
+            <h1 class="text-4xl text-custom-blue font-bold">
+              ABOUT THE UNIVERSE
+            </h1>
+            <p class="font-medium text-2xl">
+              Bienvenue sur
+              <span class="text-custom-blue font-bold">ABOUT THE UNIVERSE</span>
+              pour découvrir toutes nos découvertes à propos du monde qui nous
+              entours !
+            </p>
+          </div>
+
+          <button
+            class="w-auto px-4 py-2 bg-black border-2 border-white uppercase transition duration-300 mt-8"
+          >
+            Découvrir
+          </button>
+        </div>
+
+        <div
+          class="bg-cover bg-center mb-24 bg-white w-full p-8"
+          style="background-image: url('/assets/yong.jpg')"
+        >
+          <h1 class="text-4xl text-custom-blue font-bold">LES CHIFFRES</h1>
+          <p class="font-medium text-2xl">
+            Nous nous efforçons à archiver toutes nos trouvailles pour vous les
+            partager autant que possible !
+          </p>
+
+          <ul class="flex justify-around items-center p-5 gap-4 flex-wrap m-5">
+            <li class="flex items-center">
+              <img src="" alt="" />
+              <div class="flex flex-col">
+                <p class="text-custom-blue text-xl">
+                  Nombre d'être vivant recensés
+                </p>
+                <span id="peopleAPI"></span>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <img src="" alt="" />
+              <div class="flex flex-col">
+                <p class="text-custom-blue text-xl">
+                  Nombre de véhicules recensés
+                </p>
+                <span id="starshipsAPI"></span>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <img src="" alt="" />
+              <div class="flex flex-col">
+                <p class="text-custom-blue text-xl">
+                  Nombre de planètes recensés
+                </p>
+                <span id="planetsAPI"></span>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <img src="" alt="" />
+              <div class="flex flex-col">
+                <p class="text-custom-blue text-xl">Prochaine mission</p>
+                <span>10 juin 2021</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
